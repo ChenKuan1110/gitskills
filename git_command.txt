@@ -44,12 +44,27 @@
 	2.创建分支
 		git branch <branch_name>
 
-		git branch -b <branch_name>   创建并启动分支
+		git checkout -b <branch_name>   创建并启动分支
 
 	3.删除分支
 		git branch -d <branch_name>  
 
-	4.将分支推送到远程仓库，不然该分支就是 不为他人所见 的
+	4.将分支推送到远程仓库，不然该分支就是 不为他人所见 的（创建远程仓库分支）
 		git push origin <branch_name>
 
 	# comment
+
+	5.分支合并
+		例如，当前仓库中有两个分支：
+			master
+			feature_1
+			当feature1中完成了某些功能开发，需要将之加入主分支，
+			切换到主分支，用命令
+				git merge feature_1
+			删除本地分支
+				git branch -d feature_1
+			[
+				删除远程分支
+					git push origin :<远程分支名>
+			]
+
