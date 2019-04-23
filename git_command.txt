@@ -37,6 +37,10 @@
 		git remote add origin git@github.com:<your_name>/<your_Repo>.git
 		可以直接修改config来配置远程地址
 
+	11.本地恢复
+		commit 之后，想恢复到commit之前的版本
+			git checkout -- .
+
 二、分支
 	1.查看分支
 		git branch
